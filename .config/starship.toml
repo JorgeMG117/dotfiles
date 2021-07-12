@@ -1,0 +1,39 @@
+#      _   __  __    ____ 
+#     | | |  \/  |  / ___|
+#  _  | | | |\/| | | |  _ 
+# | |_| | | |  | | | |_| |
+#  \___/  |_|  |_|  \____|
+#
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+#[character]                            # The name of the module we are configuring is "character"
+#success_symbol = "[~~~>](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Battery
+[battery]
+disabled = true
+
+# NodeJS
+[nodejs]
+disabled = true
+
+# Java
+[java]
+disabled = true
+
+# Python
+[python]
+disabled = true
+
+#[username]
+#style_user = "blue bold"
+#format = " [$user]($style) "
+#disabled = false
+#show_always = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
