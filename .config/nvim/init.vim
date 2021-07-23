@@ -12,6 +12,9 @@ source $HOME/.config/nvim/general/remaps.vim
 " Plugins
 source $HOME/.config/nvim/plugin/plugins.vim
 
+""source $HOME/.config/nvim/plugin/config/coc.vim
+""source $HOME/.config/nvim/plugin/config/fzf.vim
+
 " Themes
 source $HOME/.config/nvim/themes/colors.vim
 source $HOME/.config/nvim/themes/dracula.vim
