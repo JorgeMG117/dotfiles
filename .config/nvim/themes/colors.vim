@@ -4,3 +4,26 @@ syntax on
 if (has("termguicolors"))
     set termguicolors
 endif
+
+" DRACULA
+"colorscheme dracula
+
+" CODEDARK
+
+" MONOKAI-PRO
+
+" MONOKAI
+
+" ONEDARK
+
+" AYU 
+
+" MATERIAL
+
+
+
+
+
+
+
+
