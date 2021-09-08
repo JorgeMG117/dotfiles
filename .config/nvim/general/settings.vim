@@ -20,6 +20,8 @@ set smartindent
 set noswapfile
 set incsearch
 set scrolloff=8
-set colorcolumn=80
+"set colorcolumn=80
 set signcolumn=yes
 set termguicolors
+
+set splitbelow splitright

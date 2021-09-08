@@ -1,1 +1,1 @@
-colorscheme xcodelight 
+colorscheme xcodedark

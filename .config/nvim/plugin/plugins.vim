@@ -8,6 +8,8 @@ Plug 'preservim/nerdtree'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 ""Themes
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -20,6 +22,8 @@ Plug 'crusoexia/vim-monokai'
 Plug 'ayu-theme/ayu-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'phanviet/vim-monokai-pro'
+Plug 'Mofiqul/vscode.nvim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

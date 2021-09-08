@@ -18,4 +18,8 @@ source $HOME/.config/nvim/plugin/plugins.vim
 " Themes
 source $HOME/.config/nvim/themes/colors.vim
 source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/onehalf.vim
+" onehalf
+" dracula
+" xcode -> No Transparency
+" vscode -> NT
