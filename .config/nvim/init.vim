@@ -16,10 +16,10 @@ source $HOME/.config/nvim/plugin/plugins.vim
 ""source $HOME/.config/nvim/plugin/config/fzf.vim
 
 " Themes
-source $HOME/.config/nvim/themes/colors.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/themes/onehalf.vim
 " onehalf
 " dracula
+" gruvbox
 " xcode -> No Transparency
 " vscode -> NT

@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 PS1="\e[0;34m \u@martinez \W \$\e[m "
 
 ### RANDOM COLOR SCRIPT ###
-colorscript random
+#colorscript random
 
 # My commands folder
 export PATH="$HOME/.local/bin:$PATH"
@@ -37,11 +37,11 @@ export EDITOR=nvim
 ### nvim as manpager
 export MANPAGER="nvim -c 'set ft=man' -"
 
-export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin
+#export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin
 
 # Flutter
-export PATH="$PATH:/home/jorge/development/flutter/bin"
+#export PATH="$PATH:/home/jorge/development/flutter/bin"
 
 # Starship shell prompt
 eval "$(starship init bash)"
-[ -f "/home/jorge/.ghcup/env" ] && source "/home/jorge/.ghcup/env" # ghcup-env
+#[ -f "/home/jorge/.ghcup/env" ] && source "/home/jorge/.ghcup/env" # ghcup-env

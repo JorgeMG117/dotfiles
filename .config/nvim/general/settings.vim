@@ -5,6 +5,7 @@
 ""  \___/  |_|  |_|  \____|
 ""
 
+syntax on
 set exrc "" If there is a vimrc in dir it will source it
 ""set guicursor=
 set relativenumber
@@ -22,6 +23,8 @@ set incsearch
 set scrolloff=8
 "set colorcolumn=80
 set signcolumn=yes
-set termguicolors
+if (has("termguicolors"))
+    set termguicolors
+endif
 
 set splitbelow splitright
