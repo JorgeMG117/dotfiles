@@ -37,7 +37,7 @@ export EDITOR=nvim
 ### nvim as manpager
 export MANPAGER="nvim -c 'set ft=man' -"
 
-#export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin
+export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin
 
 # Flutter
 #export PATH="$PATH:/home/jorge/development/flutter/bin"

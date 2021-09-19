@@ -28,6 +28,9 @@ disabled = true
 [python]
 disabled = true
 
+[golang]
+disabled = true
+
 #[username]
 #style_user = "blue bold"
 #format = " [$user]($style) "
