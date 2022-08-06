@@ -15,3 +15,5 @@ git clone --bare <git-repo> $HOME/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 config checkout
 config config --local status.showUntrackedFiles no
+
+https://www.atlassian.com/git/tutorials/dotfiles

@@ -5,3 +5,4 @@ while read line
 do
     /usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME add "$line"
 done
+
