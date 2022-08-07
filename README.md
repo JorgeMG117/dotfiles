@@ -21,3 +21,55 @@ config config --local status.showUntrackedFiles no
 
 Way to manage the dotfiles inspired in
 [https://www.atlassian.com/git/tutorials/dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
+
+# Login and window manager
+
+```bash
+sudo pacman -S xorg lightdm lightdm-gtk-greeter qtile
+```
+
+```bash
+sudo systemctl enable lightdm
+```
+
+# Terminal emulator
+
+```bash
+sudo pacman -S alacritty
+```
+
+# Program launcher
+
+```bash
+sudo pacman -S rofi
+```
+
+# Wallpaper
+
+```bash
+sudo pacman -S feh
+```
+
+# Fonts
+
+# Audio
+
+```bash
+sudo pacman -S pulseaudio pavucontrol
+```
+
+```bash
+sudo pacman -S brightnessctl
+```
+
+# Monitors
+
+```bash
+sudo pacman -S arandr
+```
+
+# File Manager
+
+```bash
+sudo pacman -S thunar ranger
+```

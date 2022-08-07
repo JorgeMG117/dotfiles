@@ -6,7 +6,7 @@ from libqtile.utils import guess_terminal
 # Theme
 from os import path
 import json
-theme = "/home/jorge/.config/qtile/themes/dracula.json"
+theme = "/home/jorge/.config/qtile/themes/mydracula.json"
 
 if not path.isfile(theme):
     raise Exception(f'"{theme}" does not exist')
