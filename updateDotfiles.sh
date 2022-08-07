@@ -6,3 +6,5 @@ do
     /usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME add "$line"
 done
 
+/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME commit -m \""$1"\"
+

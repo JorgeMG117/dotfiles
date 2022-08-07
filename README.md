@@ -1,19 +1,23 @@
 # Overview
 
 This repository contains my personal configurations.
-In this guide I will walk you throw all the steps I follow after a fresh Arch Linux installation.
+In this guide I will walk you throw the steps I follow after an Arch Linux installation.
 
 # Installation
 
-Put this in your .bashrc or .zsh
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+repo='https://github.com/JorgeMG117/dotfiles.git'
+
+git clone --bare $repo $HOME/dotfiles
+
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} rm {}
+
+config checkout
+
+config config --local status.showUntrackedFiles no
 ```
 
-git clone --bare <git-repo> $HOME/dotfiles
-
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-config checkout
-config config --local status.showUntrackedFiles no
-
-https://www.atlassian.com/git/tutorials/dotfiles
+Way to manage the dotfiles inspired in
+[https://www.atlassian.com/git/tutorials/dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
