@@ -19,6 +19,15 @@ config checkout
 config config --local status.showUntrackedFiles no
 ```
 
+To update the dotfiles, execute the following commands for the files to upload
+
+```bash
+config status
+config add README.md
+config commit -m "Update README"
+```
+
+
 Way to manage the dotfiles inspired in
 [https://www.atlassian.com/git/tutorials/dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
 
@@ -51,6 +60,23 @@ sudo pacman -S feh
 ```
 
 # Fonts
+
+Nerd Fonts can be downloaded from the following website.
+
+[Nerd Fonts download website](https://www.nerdfonts.com/font-downloads)
+
+With the downloaded zip, execute the following commands.
+
+
+```bash
+sudo cp [font-name.zip] /usr/share/fonts/
+
+cd /usr/share/fonts/
+
+sudo unzip [font-name.zip]
+
+fc-cache -fv
+```
 
 # Audio
 
