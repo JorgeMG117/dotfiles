@@ -25,6 +25,7 @@ To update the dotfiles, execute the following commands for the files to upload
 config status
 config add README.md
 config commit -m "Update README"
+config push origin master #Change origin to your own repository
 ```
 
 
@@ -57,6 +58,15 @@ sudo pacman -S rofi
 
 ```bash
 sudo pacman -S feh
+```
+
+To change the background, modify the following code in the qtile configuration
+
+```python
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~')
+    subprocess.run(["feh", "--bg-scale", home + "/wallpapers/0178.jpg"])
 ```
 
 # Fonts

@@ -3,6 +3,10 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+import subprocess
+from libqtile import hook
+import os
+
 # Theme
 from os import path
 import json
@@ -264,3 +268,11 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+
+
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~')
+    subprocess.run(["feh", "--bg-scale", home + "/wallpapers/0178.jpg"])
+
+
