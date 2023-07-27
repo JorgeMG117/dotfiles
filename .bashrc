@@ -16,7 +16,7 @@ PS1="\e[0;34m \u@martinez \W \$\e[m "
 export PATH="$HOME/.local/bin:$PATH"
 
 # Alias
-alias v='nvim'
+alias vim='nvim'
 alias mv='mv -i'
 # alias rm='rm -i'
 
@@ -24,7 +24,7 @@ alias mv='mv -i'
 #alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 #alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 #alias ll='exa -l --color=always --group-directories-first'  # long format
-#alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
 #alias l.='exa -a | egrep "^\."'
 
 
@@ -42,3 +42,4 @@ export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/12.
 # Starship shell prompt
 eval "$(starship init bash)"
 #[ -f "/home/jorge/.ghcup/env" ] && source "/home/jorge/.ghcup/env" # ghcup-env
+. "$HOME/.cargo/env"

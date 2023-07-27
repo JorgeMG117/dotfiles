@@ -109,3 +109,12 @@ sudo pacman -S arandr
 ```bash
 sudo pacman -S thunar ranger
 ```
+
+# Other Software
+```bash
+sudo pacman -S exa # Replacement for ls
+sudo pacman -S ripgrep
+sudo pacman -S picom # Transparency
+sudo pacman -S gcc go
+```
+

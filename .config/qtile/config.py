@@ -148,7 +148,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="UbuntuMono Nerd Font",
+    font="agave Nerd Font",
     fontsize=14,
     padding=1,
 )
@@ -274,5 +274,7 @@ wmname = "LG3D"
 def autostart():
     home = os.path.expanduser('~')
     subprocess.run(["feh", "--bg-scale", home + "/wallpapers/0178.jpg"])
+    subprocess.run(["setxkbmap", "es"])
+    subprocess.run(["picom", "-b"])
 
 

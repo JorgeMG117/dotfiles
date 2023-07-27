@@ -1,3 +1,5 @@
+window_opacity: 0.6
+
 colors:
   # Default colors
   primary:
@@ -37,7 +39,7 @@ window:
     x: 2
     y: 0
   # Background opacity
-  opacity: 0.9
+  #opacity: 7.0
 
 cursor:
   style:
