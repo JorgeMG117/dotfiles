@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 PS1="\e[0;34m \u@martinez \W \$\e[m "
 
 ### RANDOM COLOR SCRIPT ###
-#colorscript random
+# colorscript random
 
 # My commands folder
 export PATH="$HOME/.local/bin:$PATH"
@@ -27,6 +27,8 @@ alias mv='mv -i'
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 #alias l.='exa -a | egrep "^\."'
 
+alias f='ranger'
+
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
@@ -35,7 +37,7 @@ export EDITOR=nvim
 #export HISTCONTROL=ignoreboth
 
 ### nvim as manpager
-export MANPAGER="nvim -c 'set ft=man' -"
+#export MANPAGER="nvim -c 'set ft=man' -"
 
 export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin
 
@@ -43,3 +45,11 @@ export PATH=$PATH:/home/jorge/.config/coc/extensions/coc-clangd-data/install/12.
 eval "$(starship init bash)"
 #[ -f "/home/jorge/.ghcup/env" ] && source "/home/jorge/.ghcup/env" # ghcup-env
 . "$HOME/.cargo/env"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+
+# Load Angular CLI autocompletion.
+# source <(ng completion script)

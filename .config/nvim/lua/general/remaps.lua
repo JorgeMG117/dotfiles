@@ -20,8 +20,12 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
+-- Split Vertically
+-- Ctrl + w, v
+-- Ctrl + w, s
+
 -- File explorer
-vim.keymap.set("n", "<leader>e", ":Lex 30<cr>")
+vim.keymap.set("n", "<leader>e", ":Lex 15<cr>")
 vim.keymap.set("n", "<leader>pv", ":Ex <cr>")
 
 -- Resize with arrows

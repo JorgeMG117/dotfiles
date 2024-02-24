@@ -42,6 +42,16 @@ sudo pacman -S xorg lightdm lightdm-gtk-greeter qtile
 sudo systemctl enable lightdm
 ```
 
+Change the theme of *lightdm* to make it look cooler
+
+```bash
+pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+```
+
+Edit /etc/lightdm/lightdm.conf and set greeter-session=lightdm-webkit2-greeter
+
+Edit /etc/lightdm/lightdm-webkit2-greeter.conf and set theme or webkit-theme to litarvan
+
 # Terminal emulator
 
 ```bash
@@ -96,6 +106,13 @@ sudo pacman -S pulseaudio pavucontrol
 
 ```bash
 sudo pacman -S brightnessctl
+```
+
+
+# Clipboard 
+
+```bash
+sudo pacman -S xclip xsel
 ```
 
 # Monitors

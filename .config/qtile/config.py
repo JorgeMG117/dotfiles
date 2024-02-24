@@ -104,7 +104,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 ]]
 
 groups = [Group(i) for i in [
-    "   ","   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ",
+    "   ","   ", "   ", "   ", "   ", "   ", "   ", "  ", "   ",
 ]]
 
 for i, group in enumerate(groups):
@@ -163,7 +163,7 @@ separator = lambda: widget.Sep(**base(), linewidth=0, padding=5)
 
 powerline = lambda fg='light', bg='dark': widget.TextBox(
     **base(fg, bg),
-    text="",
+    text="",
     fontsize=37,
     padding=-3
 )
