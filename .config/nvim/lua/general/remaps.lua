@@ -20,6 +20,10 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
+-- Better movement
+vim.keymap.set("n", "<A-k>", "10k")
+vim.keymap.set("n", "<A-j>", "10j")
+
 -- Split Vertically
 -- Ctrl + w, v
 -- Ctrl + w, s
@@ -39,8 +43,8 @@ vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 
 -- Move text up and down
-vim.keymap.set("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
-vim.keymap.set("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
+--vim.keymap.set("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
+--vim.keymap.set("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
 
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])

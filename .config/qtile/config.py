@@ -67,7 +67,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "m", lazy.spawn("rofi -show")),
 
     # Browser
-    ([mod], "b", lazy.spawn("firefox")),
+    ([mod], "b", lazy.spawn("google-chrome-stable")),
 
     # File Explorer
     ([mod], "e", lazy.spawn("thunar")),
@@ -269,7 +269,6 @@ wl_input_rules = None
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
 
-
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~')
@@ -277,4 +276,6 @@ def autostart():
     subprocess.run(["setxkbmap", "es"])
     subprocess.run(["picom", "-b"])
 
+    subprocess.call("xinput set-prop 'SYNA32E2:00 06CB:CEE7 Touchpad' 308 1", shell=True)
+    # subprocess.call("nitrogen --restore &", shell=True)
 
