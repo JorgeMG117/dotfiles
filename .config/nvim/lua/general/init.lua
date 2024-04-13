@@ -1,3 +1,3 @@
 require("general.settings")
 require("general.remaps")
-require("general.packer")
+require("general.lazy")
