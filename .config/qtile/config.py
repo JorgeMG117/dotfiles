@@ -67,7 +67,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "m", lazy.spawn("rofi -show")),
 
     # Browser
-    ([mod], "b", lazy.spawn("firefox")),
+    ([mod], "b", lazy.spawn("google-chrome-stable")),
 
     # File Explorer
     ([mod], "e", lazy.spawn("thunar")),
@@ -104,7 +104,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 ]]
 
 groups = [Group(i) for i in [
-    "   ","   ", "   ", "   ", "   ", "   ", "   ", "  ", "   ",
+    "   ","   ", "   ", "   ", "   ", "   ",
 ]]
 
 for i, group in enumerate(groups):
@@ -124,7 +124,11 @@ for i, group in enumerate(groups):
         ]
     )
 
-layout_conf = {
+layout_conf_max = {
+    'margin': 10
+}
+
+layout_conf_monad_tall = {
     'border_focus': colors['focus'][0],
     'border_width': 1,
     'margin': 4
@@ -132,8 +136,8 @@ layout_conf = {
 
 layouts = [
     #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
-    layout.Max(),
-    layout.MonadTall(**layout_conf),
+    layout.Max(**layout_conf_max),
+    layout.MonadTall(**layout_conf_monad_tall),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -269,7 +273,6 @@ wl_input_rules = None
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
 
-
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~')
@@ -277,4 +280,6 @@ def autostart():
     subprocess.run(["setxkbmap", "es"])
     subprocess.run(["picom", "-b"])
 
+    subprocess.call("xinput set-prop 'SYNA32E2:00 06CB:CEE7 Touchpad' 308 1", shell=True)
+    # subprocess.call("nitrogen --restore &", shell=True)
 
