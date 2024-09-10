@@ -50,6 +50,7 @@ eval "$(starship init bash)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
+export PATH=$PATH:/usr/local/go/bin
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)

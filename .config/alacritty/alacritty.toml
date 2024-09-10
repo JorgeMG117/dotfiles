@@ -26,14 +26,14 @@ foreground = "0xbbc5ff"
 shape = "Block"
 
 [font]
-size = 9
+size = 11
 
 [font.normal]
 family = "mononoki Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 0.9
+opacity = 1
 
 [window.padding]
 x = 2

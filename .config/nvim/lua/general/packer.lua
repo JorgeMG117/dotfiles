@@ -51,6 +51,12 @@ return require('packer').startup(function(use)
   	}
   }
 
+  -- Statusline
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
   -- Color scheme
   use 'Mofiqul/dracula.nvim'
   use 'folke/tokyonight.nvim'

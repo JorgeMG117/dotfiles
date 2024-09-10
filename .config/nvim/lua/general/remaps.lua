@@ -20,6 +20,10 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
+-- Better scroll
+vim.keymap.set("n", "<C-j>", "10j")
+vim.keymap.set("n", "<C-k>", "10k")
+
 -- Split Vertically
 -- Ctrl + w, v
 -- Ctrl + w, s

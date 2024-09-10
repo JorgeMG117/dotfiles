@@ -39,6 +39,10 @@ sudo pacman -S xorg lightdm lightdm-gtk-greeter qtile
 ```
 
 ```bash
+sudo apt install i3
+```
+
+```bash
 sudo systemctl enable lightdm
 ```
 
@@ -134,4 +138,37 @@ sudo pacman -S ripgrep
 sudo pacman -S picom # Transparency
 sudo pacman -S gcc go
 ```
+
+
+# Neovim
+
+I am currently using [packer](https://github.com/wbthomason/packer.nvim) as package manager.
+
+To download it execute:
+
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Then inside neovim do:
+
+```bash
+:PackerSync
+```
+
+To setup Copilot check [copilot](https://github.com/github/copilot.vim)
+
+ 
+
+# Tmux
+
+```bash
+sudo pacman -S tmux
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+
+
 
