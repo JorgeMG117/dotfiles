@@ -39,6 +39,19 @@ local plugins = {
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
 
+    -- File tree
+    {
+      "nvim-tree/nvim-tree.lua",
+      version = "*",
+      lazy = false,
+      dependencies = {
+        "nvim-tree/nvim-web-devicons",
+      },
+      config = function()
+        require("nvim-tree").setup {}
+      end,
+    },
+
     -- LSP
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
     {'williamboman/mason.nvim'},

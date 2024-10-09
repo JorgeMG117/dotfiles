@@ -29,8 +29,8 @@ vim.keymap.set("n", "<C-k>", "10k")
 -- Ctrl + w, s
 
 -- File explorer
-vim.keymap.set("n", "<leader>e", ":Lex 15<cr>")
-vim.keymap.set("n", "<leader>pv", ":Ex <cr>")
+--vim.keymap.set("n", "<leader>e", ":Lex 15<cr>")
+--vim.keymap.set("n", "<leader>pv", ":Ex <cr>")
 
 -- Resize with arrows
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>")
