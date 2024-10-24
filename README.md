@@ -142,20 +142,9 @@ sudo pacman -S gcc go
 
 # Neovim
 
-I am currently using [packer](https://github.com/wbthomason/packer.nvim) as package manager.
+If you want to install [Neovim](https://github.com/neovim/neovim/blob/master/BUILD.md) from source.
 
-To download it execute:
-
-```bash
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-Then inside neovim do:
-
-```bash
-:PackerSync
-```
+I am currently using [lazy.nvim](https://github.com/folke/lazy.nvim) as package manager.
 
 To setup Copilot check [copilot](https://github.com/github/copilot.vim)
 
